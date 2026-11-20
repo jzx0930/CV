@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="warm" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[預覽] 江政軒 Zheng-Xuan Jiang｜雷射設備軟體工程師</title>
+  <meta name="description" content="江政軒 — 雷射設備軟體工程師（研發）。設備控制軟體、機器視覺、運動控制整合。">
+  <link rel="stylesheet" href="index.css">
+  <style>
+.shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; margin-top:12px; }
+.shot { margin:0; }
+.shot button { display:block; width:100%; padding:0; border:2px solid var(--line); border-radius:8px; overflow:hidden; background:#0d1117; cursor:zoom-in; transition:.2s; line-height:0; }
+.shot button:hover { border-color:var(--accent); transform:translateY(-2px); }
+.shot img { width:100%; height:auto; display:block; }
+.shot figcaption { font-size:.68rem; line-height:1.35; color:var(--ink-soft); margin-top:5px; text-align:left; }
+.proj .video-box { max-width:620px; margin-top:12px; }
+.lb { position:fixed; inset:0; z-index:100; background:rgba(0,0,0,.93); display:flex; align-items:center; justify-content:center; padding:3vmin; }
+.lb[hidden] { display:none; }
+.lb img { max-width:94vw; max-height:86vh; object-fit:contain; border-radius:6px; }
+.lb-close { position:absolute; top:14px; right:20px; font-size:2rem; line-height:1; color:#fff; background:none; border:0; cursor:pointer; }
+.lb-nav { position:absolute; top:50%; transform:translateY(-50%); font-size:2.6rem; color:#fff; background:rgba(255,255,255,.08); border:0; width:52px; height:72px; cursor:pointer; border-radius:8px; }
+.lb-prev{left:14px} .lb-next{right:14px}
+.lb-nav:hover,.lb-close:hover{ color:var(--accent); }
+.lb-cap { position:absolute; bottom:16px; left:0; right:0; text-align:center; color:#ddd; font-size:.85rem; }
+@media screen and (max-width:992px){ .shots{ grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); } .proj .video-box{ max-width:100%; } }
+@media print { .shots,.lb{ display:none; } }
+</style>
+</head>
+<body>
+
+  <div class="controls">
+    <button id="langBtn" type="button">EN</button>
+    <button id="themeBtn" type="button">TECH</button>
+  </div>
+
+  <div class="resume">
+   <div class="top">
+    <!-- ===== 左欄 ===== -->
+    <aside class="info">
+      <img class="avator" src="avatar.jpg" alt="江政軒">
+      <h1 class="name">
+        <span class="zh-only">江政軒</span>
+        <span class="en-only">Zheng-Xuan Jiang</span>
+      </h1>
+      <div class="nameEn">
+        <span class="zh-only">Zheng-Xuan Jiang</span>
+        <span class="en-only">江政軒</span>
+      </div>
+
+      <span class="jobPosition">
+        <span class="zh-only">雷射設備軟體工程師（研發）</span>
+        <span class="en-only">Laser Equipment Software Engineer (R&amp;D)</span>
+      </span>
+      <div class="jobSub">
+        <span class="zh-only">中華精測 CHPT · 雷射專案部</span>
+        <span class="en-only">CHPT · Laser Project Division</span>
+      </div>
+
+      <ul class="contact">
+        <li><a href="mailto:fuli62@yahoo.com.tw">fuli62@yahoo.com.tw</a></li>
+        <li><a href="tel:+886908301892">0908-301-892</a></li>
+        <li><span class="zh-only">桃園市中壢區</span><span class="en-only">Zhongli, Taoyuan, Taiwan</span></li>
+      </ul>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/in/zheng-xuan-j-03b1a227b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jzx0930" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </aside>
+
+    <!-- ===== 右欄上半 ===== -->
+    <div class="intro">
+
+      <section class="block brief">
+        <h4>ABOUT ME</h4>
+        <h2><span class="zh-only">關於我</span><span class="en-only">About me</span></h2>
+        <p class="zh-only">設備控制軟體研發工程師。工作介於機台與操作員之間：一端是運動控制器、雷射源、工業相機與氣壓元件，另一端是技術員真的用得下去的 C# / .NET WinForms 介面。兩條互補的技術線——設備控制軟體（多軸運動控制、現場總線整合、容錯與執行緒設計）與機器視覺（Emgu CV／OpenCV 的影像擷取、邊緣偵測、分割與物件辨識）。機械工程接生物產業機電的背景，加上一年半導體自動化的 PLC 與無塵室實務，讓我能從機構與配線一路追到使用者介面。工作方式相信 log 與量測資料勝過假設。</p>
+        <p class="en-only">Equipment control software engineer. My work sits between the machine and the operator: motion controllers, laser sources, industrial cameras and pneumatics on one side, and a C# / .NET WinForms interface a technician can actually use on the other. Two complementary tracks — equipment control software (multi-axis motion control, fieldbus integration, fault tolerance and threading design) and machine vision (acquisition, edge detection, segmentation and object recognition with Emgu CV / OpenCV). A mechanical engineering background followed by bio-industrial mechatronics, plus a year of hands-on PLC and cleanroom work in semiconductor automation, lets me follow a problem from the mechanism and the wiring up to the user interface. I trust logs and measurements over assumptions.</p>
+      </section>
+
+      <div class="cols">
+        <section class="block">
+          <h4>SUMMARY</h4>
+          <h2><span class="zh-only">專業領域</span><span class="en-only">Focus areas</span></h2>
+          <ul class="list">
+            <li><span class="zh-only">設備控制軟體</span><span class="en-only">Equipment control software</span></li>
+            <li><span class="zh-only">機器視覺</span><span class="en-only">Machine vision</span></li>
+            <li><span class="zh-only">運動控制整合</span><span class="en-only">Motion control</span></li>
+            <li><span class="zh-only">影像處理</span><span class="en-only">Image processing</span></li>
+            <li><span class="zh-only">現場總線整合</span><span class="en-only">Fieldbus integration</span></li>
+            <li><span class="zh-only">自動化流程設計</span><span class="en-only">Automation design</span></li>
+            <li><span class="zh-only">根因除錯</span><span class="en-only">Root-cause debugging</span></li>
+          </ul>
+        </section>
+
+        <section class="block">
+          <h4>EDUCATION</h4>
+          <h2><span class="zh-only">學歷</span><span class="en-only">Education</span></h2>
+          <h3><span class="zh-only">國立中興大學｜碩士</span><span class="en-only">National Chung Hsing University｜M.S.</span></h3>
+          <div class="org">
+            <span class="zh-only">生物產業機電工程學系　2022.07 – 2024.07</span>
+            <span class="en-only">Bio-Industrial Mechatronics Engineering　Jul 2022 – Jul 2024</span>
+          </div>
+          <h3 style="margin-top:10px"><span class="zh-only">國立勤益科技大學｜學士</span><span class="en-only">National Chin-Yi University of Technology｜B.E.</span></h3>
+          <div class="org">
+            <span class="zh-only">機械工程系　2018.09 – 2022.06</span>
+            <span class="en-only">Mechanical Engineering　Sep 2018 – Jun 2022</span>
+          </div>
+        </section>
+      </div>
+    </div><!-- /.intro -->
+   </div><!-- /.top -->
+
+   <main class="wide">
+      <section class="block">
+        <h4>SKILLS</h4>
+        <h2><span class="zh-only">技術技能</span><span class="en-only">Technical skills</span></h2>
+        <ul class="list">
+          <li>C#</li><li>.NET / WinForms</li><li>Python</li><li>C++</li><li>JavaScript</li>
+          <li>OpenCV / Emgu CV</li><li>NumPy / pandas</li><li>PyQt5</li>
+          <li>Aerotech A3200</li><li>Automation1</li><li>G-code</li><li>CADFusion</li><li>PSO</li>
+          <li>PLC</li><li>Modbus/TCP</li><li>IO-Link</li><li>Arduino</li>
+          <li>PostgreSQL</li><li>Supabase</li><li>Git</li>
+        </ul>
+      </section>
+
+      <div class="twoCol">
+      <section class="block">
+        <h4>EXPERIENCE</h4>
+        <h2><span class="zh-only">工作經歷</span><span class="en-only">Experience</span></h2>
+        <ul class="listExperience">
+
+          <li class="year">
+            <h3><span class="zh-only">RD 資深工程師2｜中華精測 CHPT</span><span class="en-only">Senior R&amp;D Engineer II｜CHPT</span></h3>
+            <h4>2025.Mar. – Now</h4>
+            <div class="org">
+              <span class="zh-only">雷射專案部 · 探針卡、Load Board 與高階 PCB 整合方案供應商</span>
+              <span class="en-only">Laser Project Division · Probe card, load board and high value added PCB solutions</span>
+            </div>
+            <ul class="exp">
+              <li><span class="zh-only">開發並維護雷射微孔加工設備的 C# / .NET WinForms 控制軟體，涵蓋運動控制、雷射出光、線上功率量測、氣壓控制與自動加工流程。</span><span class="en-only">Develop and maintain the C# / .NET WinForms control software for laser micro-machining equipment: motion control, laser output, in-line power measurement, pneumatic control and the automated process flow.</span></li>
+              <li><span class="zh-only">研發影像特徵萃取演算法，依影像判讀結果即時給予機台指令。</span><span class="en-only">Develop image feature extraction algorithms and drive machine commands from the inspection result.</span></li>
+              <li><span class="zh-only">整合多軸運動控制（Aerotech A3200／Automation1）、USB 量測儀器與現場總線裝置（Modbus/TCP、IO-Link）於單一操作介面。</span><span class="en-only">Integrate multi-axis motion control (Aerotech A3200 / Automation1), USB instruments and fieldbus devices (Modbus/TCP, IO-Link) into one operator-facing application.</span></li>
+              <li><span class="zh-only">解析 G-Code 並換算設備加工位置；以 PSO 距離觸發與 CADFusion 產生的路徑開發雷射加工流程。</span><span class="en-only">Parse G-code and map it to machine coordinates; develop laser processing routines using PSO distance-triggered output and CADFusion-generated toolpaths.</span></li>
+              <li><span class="zh-only">建立儀器重連與容錯邏輯，暫時性異常只記錄並復原，不中斷整批加工。</span><span class="en-only">Build instrument reconnection and fault-tolerance logic so transient faults are logged and recovered from without aborting a batch.</span></li>
+              <li><span class="zh-only">設計多執行緒 HMI 架構並自建多語系框架，數百個既有控制項免改碼即支援多語切換。</span><span class="en-only">Design the multithreaded HMI architecture and an in-house localisation framework adding multi-language switching across hundreds of controls without code changes.</span></li>
+              <li><span class="zh-only">以生產 log 與量測資料做根因除錯，含功能測試未發現的時序問題；製作研發專案簡報並與團隊協同執行。</span><span class="en-only">Root-cause debugging from production logs and measured data, including timing defects functional testing had missed; prepare project reports and work with the team.</span></li>
+            </ul>
+          </li>
+
+          <li class="year">
+            <h3><span class="zh-only">機電整合助理工程師｜旭東機械</span><span class="en-only">Mechatronics Assistant Engineer｜Shuz Tung Machinery</span></h3>
+            <h4>2021.Jun. – 2022.Jun.</h4>
+            <div class="org">
+              <span class="zh-only">自動控制設備製造 · 校外實習</span>
+              <span class="en-only">Automation equipment manufacturer · Industrial placement</span>
+            </div>
+            <ul class="exp">
+              <li><span class="zh-only">撰寫並調校晶圓傳輸盒（FOUP）包裝機的 PLC 程式。</span><span class="en-only">Wrote and commissioned PLC programs for a wafer-carrier (FOUP) packaging machine.</span></li>
+              <li><span class="zh-only">跟隨機台進入無塵室進行安裝、校驗與問題排除，熟悉半導體廠現場作業規範。</span><span class="en-only">Worked inside cleanrooms for installation, verification and troubleshooting, following semiconductor fab operating practice.</span></li>
+              <li><span class="zh-only">參與自動化機構裝配、系統介面維護改善與設備功能提升。</span><span class="en-only">Contributed to mechanism assembly, system interface maintenance and equipment capability improvements.</span></li>
+            </ul>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="block">
+        <h4>CERTIFICATIONS &amp; PATENT</h4>
+        <h2><span class="zh-only">證照與專利</span><span class="en-only">Certifications &amp; patent</span></h2>
+        <ul class="certs">
+          <li><b><span class="zh-only">新型專利 M662154</span><span class="en-only">Utility model patent M662154</span></b>　<span><span class="zh-only">洋蔥苗葉片自動修剪機（2024.10 公告）</span><span class="en-only">Onion seedling leaf automatic trimming machine (granted Oct 2024)</span></span></li>
+          <li><b><span class="zh-only">乙級氣壓技術士</span><span class="en-only">Class B Pneumatics Technician</span></b>　<span><span class="zh-only">勞動部勞動力發展署</span><span class="en-only">Workforce Development Agency, Ministry of Labor</span></span></li>
+          <li><b><span class="zh-only">丙級氣壓技術士</span><span class="en-only">Class C Pneumatics Technician</span></b>　<span><span class="zh-only">勞動部勞動力發展署</span><span class="en-only">Workforce Development Agency, Ministry of Labor</span></span></li>
+          <li><b><span class="zh-only">丙級機電整合技術士</span><span class="en-only">Class C Mechatronics Technician</span></b>　<span><span class="zh-only">勞動部勞動力發展署</span><span class="en-only">Workforce Development Agency, Ministry of Labor</span></span></li>
+        </ul>
+      </section>
+      </div><!-- /.twoCol -->
+
+      <section class="block">
+        <h4>PROJECTS</h4>
+        <h2><span class="zh-only">專案</span><span class="en-only">Projects</span></h2>
+
+        <div class="proj">
+          <h3><span class="zh-only">座標檢視器 — 微孔量測與製程異常分析</span><span class="en-only">Coordinate Viewer — Measurement &amp; Process Anomaly Analysis</span></h3>
+          <div class="meta">Python · PyQt5 / pyqtgraph · Streamlit / Plotly · NumPy · ICP</div>
+          <ul>
+            <li><span class="zh-only">把量測結果對回設計座標與加工順序，回推異常出在製程哪個環節、是否可重現。</span><span class="en-only">Maps measurement results back to design coordinates and the machining order, to trace where an anomaly originated and whether it is reproducible.</span></li>
+            <li><span class="zh-only">以圖形而非數值報表呈現：超規特徵直接標在孔位圖上，群聚、邊緣效應與方向性漂移一眼可辨。</span><span class="en-only">Presents findings spatially rather than as a table: out-of-spec features are drawn on the hole map, so clustering, edge effects and directional drift are obvious at a glance.</span></li>
+            <li><span class="zh-only">格點佔用率粗搜 + ICP／Kabsch 精修，殘差收斂至次微米；以每面板一個錨點解決密集對稱陣列的相位歧義。</span><span class="en-only">Grid-occupancy coarse search refined with ICP and Kabsch least squares to sub-micron residual; one operator-set anchor per panel resolves the phase ambiguity inherent to dense symmetric arrays.</span></li>
+          </ul>
+          <div class="shots">
+            <figure class="shot"><button type="button" data-i="0"><img src="img/viewer-1-measure-thumb.jpg" alt=""></button>
+              <figcaption><span class="zh-only">量測中心座標分佈與資料表</span><span class="en-only">Measured centre distribution &amp; data table</span></figcaption></figure>
+            <figure class="shot"><button type="button" data-i="1"><img src="img/viewer-2-merge-thumb.jpg" alt=""></button>
+              <figcaption><span class="zh-only">合併顯示：區域色塊與加工順序對照</span><span class="en-only">Merged view: zones and processing order</span></figcaption></figure>
+            <figure class="shot"><button type="button" data-i="2"><img src="img/viewer-3-overlay-thumb.jpg" alt=""></button>
+              <figcaption><span class="zh-only">疊合圖：超規紅點疊回設計座標</span><span class="en-only">Overlay: out-of-spec points on design coordinates</span></figcaption></figure>
+            <figure class="shot"><button type="button" data-i="3"><img src="img/viewer-4-dxf-thumb.jpg" alt=""></button>
+              <figcaption><span class="zh-only">DXF ＋ 99×99 方格自動對位</span><span class="en-only">DXF with 99×99 grid registration</span></figcaption></figure>
+            <figure class="shot"><button type="button" data-i="4"><img src="img/viewer-5-cal-thumb.jpg" alt=""></button>
+              <figcaption><span class="zh-only">補償檔方格與逐格補償值</span><span class="en-only">Compensation grid and per-cell values</span></figcaption></figure>
+          </div>
+        </div>
+
+        <div class="proj">
+          <h3><span class="zh-only">自動化洋蔥葉片修剪及缺株檢測機</span><span class="en-only">Automated Onion Seedling Trimming &amp; Inspection Machine</span></h3>
+          <div class="meta">C# WinForms · Emgu CV · Arduino Uno · 113 農科-4.5.1-糧-01</div>
+          <ul>
+            <li><span class="zh-only">農業部研究計畫，獨立負責智能檢測與機台控制系統；工業相機與機械運動同步觸發拍攝。</span><span class="en-only">Ministry of Agriculture research project; sole developer of the inspection and machine control system, with camera capture synchronised to machine travel.</span></li>
+            <li><span class="zh-only">以 Emgu CV 完成灰階轉換、濾波、邊緣檢測與穴盤缺株判定；HMI 支援門檻設定與 Excel 報表匯出。</span><span class="en-only">Emgu CV pipeline for greyscale conversion, filtering, edge detection and missing-plant detection; HMI with configurable thresholds and Excel report export.</span></li>
+            <li><span class="zh-only">成果延伸申請新型專利「洋蔥苗葉片自動修剪機」（證書號 M662154）。</span><span class="en-only">Resulted in utility model patent "Onion seedling leaf automatic trimming machine" (certificate M662154).</span></li>
+          </ul>
+          <div class="video-box">
+          <iframe src="https://drive.google.com/file/d/1sfZuuW5HvGw6wAE-_W655Eih0fANR1Yc/preview" allow="autoplay" allowfullscreen title="影像檢測 Demo"></iframe>
+        </div>
+        </div>
+
+        <div class="proj">
+          <h3><span class="zh-only">PlantDex — 植物收藏與成長紀錄平台（個人專案）</span><span class="en-only">PlantDex — Plant Collection &amp; Growth Tracking Platform (personal)</span></h3>
+          <div class="meta">Vanilla JS SPA · Supabase (Postgres / RLS / Auth) · Vercel · PWA · Three.js</div>
+          <ul>
+            <li><span class="zh-only">全端自建、跑在免費方案；不自寫 API 層，安全性完全由 Postgres row-level security 承擔。</span><span class="en-only">Full stack on free tiers; no self-written API layer — security is enforced entirely through Postgres row-level security.</span></li>
+            <li><span class="zh-only">前身是架在 GitHub Pages 的靜態照片牆，以 Google Drive 當圖床維持零成本；目前累積 138 株、653 張照片。</span><span class="en-only">Grew out of a static photo wall on GitHub Pages using Google Drive as a free image host; now 138 plants and 653 photos.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="foot">
+        <span class="zh-only">製程參數與量測結果基於保密未列出。</span>
+        <span class="en-only">Process parameters and measured results are omitted for confidentiality.</span>
+      </div>
+    </main>
+  
+  <div class="lb" id="lb" hidden>
+    <button class="lb-close" id="lbClose" type="button" aria-label="close">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="prev">&#8249;</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="next">&#8250;</button>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var langBtn = document.getElementById('langBtn');
+  var themeBtn = document.getElementById('themeBtn');
+
+  function readStore(k, fallback) {
+    try { return localStorage.getItem(k) || fallback; } catch (e) { return fallback; }
+  }
+  function writeStore(k, v) {
+    try { localStorage.setItem(k, v); } catch (e) {}
+  }
+
+  function applyLang(lang) {
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang === 'zh' ? 'zh-Hant' : 'en');
+    langBtn.textContent = lang === 'zh' ? 'EN' : '中文';
+    writeStore('cv-lang', lang);
+  }
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    themeBtn.textContent = theme === 'warm' ? 'TECH' : 'WARM';
+    writeStore('cv-theme', theme);
+  }
+
+  applyLang(readStore('cv-lang', 'zh'));
+  applyTheme(readStore('cv-theme', 'warm'));
+
+
+  var shots = [
+    ['img/viewer-1-measure.png','量測中心座標分佈與資料表','Measured centre distribution and data table'],
+    ['img/viewer-2-merge.png','合併顯示：區域色塊與加工順序對照','Merged view: zone colouring and processing order'],
+    ['img/viewer-3-overlay.png','疊合圖：超規紅點疊回設計座標','Overlay: out-of-spec points on design coordinates'],
+    ['img/viewer-4-dxf.png','DXF ＋ 99×99 方格對位','DXF with 99x99 grid registration'],
+    ['img/viewer-5-cal.png','補償檔方格與逐格補償值','Compensation grid and per-cell values']
+  ];
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'), idx=0;
+  function show(i){
+    idx=(i+shots.length)%shots.length;
+    lbImg.src=shots[idx][0];
+    lbCap.textContent = root.getAttribute('data-lang')==='zh' ? shots[idx][1] : shots[idx][2];
+    lb.hidden=false; document.body.style.overflow='hidden';
+  }
+  function hide(){ lb.hidden=true; document.body.style.overflow=''; }
+  Array.prototype.forEach.call(document.querySelectorAll('.shot button'), function(b){
+    b.addEventListener('click', function(){ show(parseInt(b.getAttribute('data-i'),10)); });
+  });
+  document.getElementById('lbClose').addEventListener('click', hide);
+  document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });
+  document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
+  lb.addEventListener('click', function(e){ if(e.target===lb||e.target===lbImg) hide(); });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key==='Escape') hide();
+    if(e.key==='ArrowLeft') show(idx-1);
+    if(e.key==='ArrowRight') show(idx+1);
+  });
+
+  langBtn.addEventListener('click', function () {
+    applyLang(root.getAttribute('data-lang') === 'zh' ? 'en' : 'zh');
+  });
+  themeBtn.addEventListener('click', function () {
+    applyTheme(root.getAttribute('data-theme') === 'warm' ? 'tech' : 'warm');
+  });
+})();
+</script>
+</body>
+</html>
