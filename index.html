@@ -170,18 +170,21 @@
             <li><span class="zh-only">以圖形而非數值報表呈現：超規特徵直接標在孔位圖上，群聚、邊緣效應與方向性漂移一眼可辨。</span><span class="en-only">Presents findings spatially rather than as a table: out-of-spec features are drawn on the hole map, so clustering, edge effects and directional drift are obvious at a glance.</span></li>
             <li><span class="zh-only">格點佔用率粗搜 + ICP／Kabsch 精修，殘差收斂至次微米；以每面板一個錨點解決密集對稱陣列的相位歧義。</span><span class="en-only">Grid-occupancy coarse search refined with ICP and Kabsch least squares to sub-micron residual; one operator-set anchor per panel resolves the phase ambiguity inherent to dense symmetric arrays.</span></li>
           </ul>
-          <div class="shots">
-            <figure class="shot"><button type="button" data-i="0"><img src="img/viewer-1-measure-thumb.jpg" alt=""></button>
-              <figcaption><span class="zh-only">量測中心座標分佈與資料表</span><span class="en-only">Measured centre distribution &amp; data table</span></figcaption></figure>
-            <figure class="shot"><button type="button" data-i="1"><img src="img/viewer-2-merge-thumb.jpg" alt=""></button>
-              <figcaption><span class="zh-only">合併顯示：區域色塊與加工順序對照</span><span class="en-only">Merged view: zones and processing order</span></figcaption></figure>
-            <figure class="shot"><button type="button" data-i="2"><img src="img/viewer-3-overlay-thumb.jpg" alt=""></button>
-              <figcaption><span class="zh-only">疊合圖：超規紅點疊回設計座標</span><span class="en-only">Overlay: out-of-spec points on design coordinates</span></figcaption></figure>
-            <figure class="shot"><button type="button" data-i="3"><img src="img/viewer-4-dxf-thumb.jpg" alt=""></button>
-              <figcaption><span class="zh-only">DXF ＋ 99×99 方格自動對位</span><span class="en-only">DXF with 99×99 grid registration</span></figcaption></figure>
-            <figure class="shot"><button type="button" data-i="4"><img src="img/viewer-5-cal-thumb.jpg" alt=""></button>
-              <figcaption><span class="zh-only">補償檔方格與逐格補償值</span><span class="en-only">Compensation grid and per-cell values</span></figcaption></figure>
-          </div>
+          <details class="demo">
+            <summary><span class="zh-only">展示截圖（5 張）</span><span class="en-only">Screenshots (5)</span></summary>
+            <div class="shots">
+              <figure class="shot"><button type="button" data-i="0"><img src="img/viewer-1-measure-thumb.jpg" alt=""></button>
+                <figcaption><span class="zh-only">量測中心座標分佈與資料表</span><span class="en-only">Measured centre distribution &amp; data table</span></figcaption></figure>
+              <figure class="shot"><button type="button" data-i="1"><img src="img/viewer-2-merge-thumb.jpg" alt=""></button>
+                <figcaption><span class="zh-only">合併顯示：區域色塊與加工順序對照</span><span class="en-only">Merged view: zones and processing order</span></figcaption></figure>
+              <figure class="shot"><button type="button" data-i="2"><img src="img/viewer-3-overlay-thumb.jpg" alt=""></button>
+                <figcaption><span class="zh-only">疊合圖：超規紅點疊回設計座標</span><span class="en-only">Overlay: out-of-spec points on design coordinates</span></figcaption></figure>
+              <figure class="shot"><button type="button" data-i="3"><img src="img/viewer-4-dxf-thumb.jpg" alt=""></button>
+                <figcaption><span class="zh-only">DXF ＋ 99×99 方格自動對位</span><span class="en-only">DXF with 99×99 grid registration</span></figcaption></figure>
+              <figure class="shot"><button type="button" data-i="4"><img src="img/viewer-5-cal-thumb.jpg" alt=""></button>
+                <figcaption><span class="zh-only">補償檔方格與逐格補償值</span><span class="en-only">Compensation grid and per-cell values</span></figcaption></figure>
+            </div>
+          </details>
         </div>
 
         <div class="proj">
@@ -192,9 +195,12 @@
             <li><span class="zh-only">以 Emgu CV 完成灰階轉換、濾波、邊緣檢測與穴盤缺株判定；HMI 支援門檻設定與 Excel 報表匯出。</span><span class="en-only">Emgu CV pipeline for greyscale conversion, filtering, edge detection and missing-plant detection; HMI with configurable thresholds and Excel report export.</span></li>
             <li><span class="zh-only">成果延伸申請新型專利「洋蔥苗葉片自動修剪機」（證書號 M662154）。</span><span class="en-only">Resulted in utility model patent "Onion seedling leaf automatic trimming machine" (certificate M662154).</span></li>
           </ul>
-          <div class="video-box">
-          <iframe src="https://drive.google.com/file/d/1sfZuuW5HvGw6wAE-_W655Eih0fANR1Yc/preview" allow="autoplay" allowfullscreen title="影像檢測 Demo"></iframe>
-        </div>
+          <details class="demo">
+            <summary><span class="zh-only">Demo 影片</span><span class="en-only">Demo video</span></summary>
+            <div class="video-box">
+              <iframe data-src="https://drive.google.com/file/d/1sfZuuW5HvGw6wAE-_W655Eih0fANR1Yc/preview" allow="autoplay" allowfullscreen title="影像檢測 Demo"></iframe>
+            </div>
+          </details>
         </div>
 
         <div class="proj">
@@ -250,6 +256,15 @@
   applyLang(readStore('cv-lang', 'zh'));
   applyTheme(readStore('cv-theme', 'warm'));
 
+
+
+  Array.prototype.forEach.call(document.querySelectorAll('details.demo'), function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      var f = d.querySelector('iframe[data-src]');
+      if (f) { f.src = f.getAttribute('data-src'); f.removeAttribute('data-src'); }
+    });
+  });
 
   var shots = [
     ['img/viewer-1-measure.png','量測中心座標分佈與資料表','Measured centre distribution and data table'],
